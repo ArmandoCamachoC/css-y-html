@@ -1,0 +1,158 @@
+@font-face {
+ font-family: "dancing-script";
+      src: url("../dancing-script/DancingScript-Regular.ttf");
+}
+
+/* cajas principales y  efectos generales en galerias*/
+body{
+  font-family: "dancing-script";
+  background-color: #02010a;
+  margin: 20px;
+}
+
+a{
+  color: white;
+}
+
+#titulo{
+  background-color: #5B7989;
+  color: white;
+  text-shadow: 2px 2px #02010a ;
+  border-radius: 10px 10px 0 0;
+margin-bottom: 0px;
+}
+
+a{
+  color: white;
+}
+
+#menu {
+  margin-left:  auto;
+}
+
+#menu ul li{
+  border-left: 15px;
+  font-size: 25px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+h1{
+
+  margin-right:   auto;
+}
+#galeria{
+  width: 100%;
+  display: inline-grid;
+  background-color: #d5c75f;
+  margin-top: 0px;
+}
+
+#g1 ul, #g2 ul{
+  list-style: none;
+  display:flex;
+}
+
+#g1  img, #g2 img{
+width:70%;
+}
+
+img.uno{
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+}
+
+img.tres{
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+
+img.par{
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+/* footer y sus decoraciones*/
+footer{
+  margin-bottom: 2px;
+  background-color: #C6D5C5;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  display: flex;
+  font-size: 15px;
+  color: white;
+}
+#sociales ul li, #menu ul li {
+  list-style: none;
+  display: inline-flex;
+}
+
+footer #sociales ul li img{
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+  box-shadow: 2px 2px #02010a ;
+}
+
+footer #sociales ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+#derechos{
+  margin-left: 10px;
+
+}
+
+/* en dispositivos en menos de 900px */
+
+@media (max-width:900px ) {
+
+  #titulo{
+   display: flex;
+  flex-flow:column;
+  text-align: center;
+  }
+
+
+
+  #g1 ul{
+    margin-bottom: 1px;
+  }
+
+  #g2 ul{
+    margin-top: 1px;
+  }
+ #g1, #g2{
+   display:inline-block;
+
+ }
+
+#g1 ul , #g2 ul {
+   display:inline-block;
+
+}
+
+#g1 ul li , #g2 ul li {
+
+  margin-bottom: 2px;
+}
+
+  footer{
+    display: inline-block;
+    font-size: 25px;
+  }
+
+}/* fin max-width:900px*/
